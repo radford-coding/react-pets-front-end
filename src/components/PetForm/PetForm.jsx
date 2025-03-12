@@ -26,7 +26,7 @@ const PetForm = (props) => {
     };
 
     return (
-        <div>
+        <div className="form-container">
             <h2>add a new pet:</h2>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="name"> Name </label>

@@ -9,11 +9,11 @@ const PetDetail = (props) => {
     };
 
     return (
-        <div>
+        <div className="details-container">
             <h2>{props.selected.name}</h2>
             <p>Breed: {props.selected.breed}</p>
             <p>Age: {props.selected.age} year{props.selected.age > 1 ? 's' : ''} old</p>
-            <div>
+            <div className="button-container">
                 <button onClick={() => props.handleFormView(props.selected)}>
                     edit
                 </button>
